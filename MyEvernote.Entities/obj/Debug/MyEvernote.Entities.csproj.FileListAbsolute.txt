@@ -1,0 +1,5 @@
+C:\Users\Tugay\Desktop\MVC-CALISMA\MyEvernoteSolution\MyEvernote.Entities\bin\Debug\MyEvernote.Entities.dll
+C:\Users\Tugay\Desktop\MVC-CALISMA\MyEvernoteSolution\MyEvernote.Entities\bin\Debug\MyEvernote.Entities.pdb
+C:\Users\Tugay\Desktop\MVC-CALISMA\MyEvernoteSolution\MyEvernote.Entities\obj\Debug\MyEvernote.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Tugay\Desktop\MVC-CALISMA\MyEvernoteSolution\MyEvernote.Entities\obj\Debug\MyEvernote.Entities.dll
+C:\Users\Tugay\Desktop\MVC-CALISMA\MyEvernoteSolution\MyEvernote.Entities\obj\Debug\MyEvernote.Entities.pdb
