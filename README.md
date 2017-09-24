@@ -1,7 +1,4 @@
 # evernote-sample-project
-mvc,linq-ef,jquery,bootstrap,oop,katmanlı-mimari,c#,html
-
-
 Evernote Sample Project 
 
 MVC
