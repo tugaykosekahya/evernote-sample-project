@@ -13,3 +13,5 @@ Jquery
 Bootstrap
 Html
 Css
+Repository Design Pattern
+Singleton Design Pattern
