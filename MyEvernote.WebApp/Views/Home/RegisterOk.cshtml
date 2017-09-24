@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "RegisterOk";
+}
+
+    <div class="container">
+        <div class="row">
+            <div class="main">
+                <h3>Yönlendiriliyorsunuz . . . </h3>  <br /> <br />
+
+                <form role="form">
+                    <div class="form-group">
+                        <div class="main-content">
+                            <div class="text-success">
+
+                                <h2><span class="glyphicon glyphicon-ok"></span> &nbsp;&nbsp;&nbsp; Kayıt oldunuz...</h2><hr />
+
+                                <p class="text-justify">
+
+                                    Lütfen e-posta adresinize gönderdiğimiz aktivasyon linkine tıklayarak hesabınızı aktive ediniz.
+                                    Hesabınızı aktive etmeden not ekleyemez ve beğenme yapamazsınız.
+
+                                </p>                                    
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+<script>
+
+    $(function () {
+
+         
+        $("footer").parent().hide();
+
+        setTimeout(function () {
+
+            window.location = "Index";
+
+        }, 5000)
+
+    });
+
+
+
+</script>
+

@@ -1,0 +1,62 @@
+﻿
+@using MyEvernote.Entities.Messages
+
+
+@model List<ErrorMessageObj>
+
+
+@{
+    ViewBag.Title = "Hesap Geçersiz";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="main">
+            <h3>Yönlendiriliyorsunuz . . . </h3>  <br /> <br />
+
+            <form role="form">
+                <div class="form-group">
+                    <div class="main-content">
+                        <div class="text-danger">
+
+                            <h2><span class="glyphicon glyphicon-floppy-remove"></span> &nbsp;&nbsp;&nbsp; Geçersiz İşlem ...</h2><hr />
+
+                            <p class="text-justify">
+
+                                @foreach (ErrorMessageObj err in Model)
+                                {
+
+                                    @err.Message<br>
+
+                                }
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+    $(function () {
+
+
+        $("footer").parent().hide();
+
+        setTimeout(function () {
+
+            window.location = "Index";
+
+        }, 10000)
+
+    });
+
+
+
+</script>
+

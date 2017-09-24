@@ -1,0 +1,75 @@
+﻿@using MyEvernote.Entities.ValueObjects
+
+@model  LoginViewModel
+
+
+@{
+    ViewBag.Title = "Giriş Sayfası";
+}
+
+<link href="~/Content/login-register.css" rel="stylesheet" />
+
+@using (Html.BeginForm())
+{
+    <div class="container">
+        <div class="row">
+            <div class="main">
+                <h3>Giriş Formu</h3>
+                <a href="#" class="btn btn-lg btn-danger btn-block btn-labeled"><span class="btn-label"><i class="fa fa-google-plus"></i></span>Google</a>
+                <div class="login-or">
+                    <hr class="hr-or">
+                    <span class="span-or">or</span>
+                </div>
+
+                @Html.ValidationSummary(false)
+
+                @if (ViewBag.SetLink != null)
+                {
+                    <a href="@ViewBag.SetLink" class="btn btn btn-primary">
+                       Aktive Et
+                    </a>
+
+                }
+
+                <form role="form">
+                    <div class="form-group">
+
+                        <label for="inputUsernameEmail">Username or email</label>
+
+                        @Html.TextBoxFor(model => model.Username, new { @class = "form-control", placeholder = "Kullanıcı Adınız" })
+
+                    </div>
+
+                    <div class="form-group">
+                        <a class="pull-right" href="#">Forgot password?</a>
+                        <label for="inputPassword">Password</label>
+
+                        @Html.TextBoxFor(model => model.Password, new { @class = "form-control", placeholder = "Şifreniz", type = "password" })
+
+                    </div>
+                    <button type="submit" class="btn btn btn-primary">
+                        Giriş
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+}
+
+
+<script>
+
+    $(function () {
+
+
+        $("footer").parent().hide();
+
+
+    });
+
+
+
+</script>
